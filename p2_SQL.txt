@@ -1,0 +1,19 @@
+insert into LibraryManagement.authors (author_name) values
+('Adam Mickiewicz'),
+('Bohumil Hrabal');
+
+insert into LibraryManagement.genres (genre_name) values
+('classic poetry'),
+('classic');
+
+insert into LibraryManagement.books (title, publication_year, author_id, genre_id) values
+('Дзяди', '2022-01-01', 1, 1),
+('I Served The King Of England', '2018-01-01', 2, 2);
+
+insert into LibraryManagement.users (username, email) values
+('Andrii', 'andrii@gmail.com'),
+('Kovalchuk', 'kovalchuk@gmail.com');
+
+insert into LibraryManagement.borrowed_books (book_id, user_id, borrow_date, return_date) values
+(1, 2, '2022-01-01', '2022-03-01'),
+(2, 1, '2023-01-01', '2023-03-01');
